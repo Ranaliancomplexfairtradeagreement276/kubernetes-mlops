@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
 If running locally - e.g. by starting the web service using `python run api.py` - we would be able reach our function (or 'endpoint') at `http://localhost:5000/score`. This function takes data sent to it as JSON (that has been automatically de-serialised as a Python dict made available as the `request` variable in our function definition), and returns a response (automatically serialised as JSON).
 
-<!-- In our example function, we expect an array of features, `X`, that we pass to a ML model, which in our example returns those same features back to the caller - i.e. our chosen ML model is the identity function, which we have chosen for purely demonstrative purposes. We could just as easily have loaded a pickled SciKit-Learn or Keras model and passed the data to the approproate `predict` method, returning a score for the feature-data as JSON - see [here](https://github.com/AlexIoannides/ml-workflow-automation/blob/master/deploy/py-sklearn-flask-ml-service/api.py) for an example of this in action. -->
+In our example function, we expect an array of features, `X`, that we pass to a ML model, which in our example returns those same features back to the caller - i.e. our chosen ML model is the identity function, which we have chosen for purely demonstrative purposes. We could just as easily have loaded a pickled SciKit-Learn or Keras model and passed the data to the approproate `predict` method, returning a score for the feature-data as JSON - see [here](https://github.com/AlexIoannides/ml-workflow-automation/blob/master/deploy/py-sklearn-flask-ml-service/api.py) for an example of this in action.
 
 ### Defining the Docker Image with the `Dockerfile`
 
@@ -83,7 +83,7 @@ We assume that [Docker is running locally](https://www.docker.com) (both Docker 
 docker build --tag alexioannides/test-ml-score-api py-flask-ml-score-api
 ```
 
-<!-- Where 'alexioannides' refers to the name of the DockerHub account that we will push the image to, once we have tested it.  -->
+Where 'alexioannides' refers to the name of the DockerHub account that we will push the image to, once we have tested it. 
 
 #### Testing
 
