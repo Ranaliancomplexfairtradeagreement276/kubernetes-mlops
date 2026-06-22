@@ -83,7 +83,7 @@ We assume that [Docker is running locally](https://www.docker.com) (both Docker 
 docker build --tag alexioannides/test-ml-score-api py-flask-ml-score-api
 ```
 
-Where 'alexioannides' refers to the name of the DockerHub account that we will push the image to, once we have tested it. 
+<!-- Where 'alexioannides' refers to the name of the DockerHub account that we will push the image to, once we have tested it.  -->
 
 #### Testing
 
